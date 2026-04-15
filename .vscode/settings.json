@@ -11,7 +11,7 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "Mysql_connection",
-            "database": "mydb",
+            "database": "college",
             "username": "root",
             "askForPassword": true
         },
@@ -29,7 +29,7 @@
             },
             "driver": "MySQL",
             "name": "SQL local server",
-            "database": "Mydb",
+            "database": "hotel",
             "username": "root",
             "password": "Mustafa@31",
             "connectionTimeout": 300
