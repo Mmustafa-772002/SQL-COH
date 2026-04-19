@@ -96,4 +96,27 @@ A modern class of RDBMS that seeks to provide the scalability of NoSQL systems w
 | **In-Memory** | Caching / High-speed Apps | RAM-based |
 
 ---
-#
+## Database Management Systems (DBMS) :
+A **Database Management System (DBMS)** is software that interacts with end-users, applications, and the database itself to capture and analyze data. It provides an interface for users to create, read, update, and delete data in a database.
+### Key Functions of a DBMS:
+1. **Data Storage Management**: Efficiently stores and retrieves data.
+2. **Data Manipulation**: Allows users to manipulate data using SQL or other query languages.
+3. **Data Security**: Implements access controls to protect data from unauthorized access.  
+4. **Data Integrity**: Ensures data accuracy and consistency through constraints and rules.
+5. **Backup and Recovery**: Provides mechanisms for data backup and recovery in case of failures
+6. **Concurrency Control**: Manages simultaneous data access by multiple users to prevent conflicts.
+7. **Performance Optimization**: Uses indexing and query optimization techniques to enhance performance.
+### Popular DBMS Examples:
+| DBMS | Type | Use Case |
+| :--- | :--- | :--- |
+| MySQL | RDBMS | Web applications, small to medium-sized databases |
+| PostgreSQL | RDBMS | Complex queries, large databases, and data integrity |
+| MongoDB | NoSQL (Document Store) | Flexible schema, big data, real-time applications |
+| Redis | NoSQL (Key-Value Store) | Caching, real-time analytics, session management |
+| Neo4j | Graph Database | Social networks, recommendation engines |
+| Amazon DynamoDB | NoSQL (Distributed) | High scalability, serverless applications |
+| Amazon RDS | Cloud DBMS | Managed relational database service |
+| Google Cloud SQL | Cloud DBMS | Managed relational database service |
+
+---
+
