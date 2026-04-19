@@ -29,30 +29,71 @@ SQL-COH is a comprehensive collection of SQL queries, commands, and best practic
 - [Resources](#resources)
 
 ---
-# Database 
-A database is an organized collection of data that can be easily accessed, managed, and updated. It is designed to store, retrieve, and manage data efficiently. Databases are used in various applications, from small personal projects to large enterprise systems.
-## Database types 
-1. realtional databases (RDBMS):
-A relational database is a type of database that organizes data into tables (or relations) consisting of rows and columns. Each table represents a specific entity, and the relationships between tables are established through keys. Examples of relational databases include MySQL, PostgreSQL, Oracle Database, and Microsoft SQL Server.
-2. NoSQL databases:
-NoSQL databases are designed to handle unstructured or semi-structured data and provide high scalability and flexibility. They do not use the traditional table-based structure of relational databases. Examples of NoSQL databases include MongoDB, Cassandra, Redis, and Couchbase.
-3. In-memory databases:
-In-memory databases store data in the main memory (RAM) rather than on disk, allowing for faster data access and processing. They are often used for real-time applications and caching. Examples of in-memory databases include Redis, Memcached, and SAP HANA.
-4. Graph databases:Graph databases are designed to represent and manage data in the form of nodes, edges, and properties. They are particularly useful for applications that involve complex relationships between data, such as social networks and recommendation systems. Examples of graph databases include Neo4j, Amazon Neptune, and ArangoDB.
-5. Time-series databases:   
-Time-series databases are optimized for storing and querying time-stamped data, such as sensor data, financial data, and log data. They provide efficient storage and retrieval of time-series data. Examples of time-series databases include InfluxDB, TimescaleDB, and OpenTSDB.
-6. Object-oriented databases:
-Object-oriented databases store data in the form of objects, which can contain both data and methods. They are designed to work with object-oriented programming languages and provide a more natural way to represent complex data structures. Examples of object-oriented databases include ObjectDB, db4o, and Versant Object Database.
-7. Columnar databases:
-Columnar databases store data in columns rather than rows, which can improve query performance for certain types of analytical workloads. They are often used in data warehousing and business intelligence applications. Examples of columnar databases include Apache Cassandra, Amazon Redshift, and Google BigQuery.
-8. Distributed databases:
-Distributed databases are databases that are spread across multiple physical locations, often across different servers or data centers. They provide high availability, fault tolerance, and scalability. Examples of distributed databases include Apache Cassandra, Amazon DynamoDB, and Google Cloud Spanner.
-9. Cloud databases:
-Cloud databases are databases that are hosted and managed in the cloud, providing scalability, flexibility, and ease of access. They can be either relational or NoSQL databases. Examples of cloud databases include Amazon RDS, Microsoft Azure SQL Database, and Google Cloud SQL.
-10. NewSQL databases:
-NewSQL databases are a class of relational databases that aim to provide the scalability and performance of NoSQL databases while maintaining the ACID (Atomicity, Consistency, Isolation, Durability) properties of traditional relational databases. Examples of NewSQL databases include CockroachDB, VoltDB, and NuoDB.
-11.Non-relational databases:
-Non-relational databases, also known as NoSQL databases, are designed to handle unstructured or semi-structured data and provide high scalability and flexibility. They do not use the traditional table-based structure of relational databases. Examples of non-relational databases include MongoDB, Cassandra, Redis, and Couchbase.
+# Database Systems Overview
+
+A **database** is an organized collection of structured information, or data, typically stored electronically. To manage this data effectively, we use a **Database Management System (DBMS)**.
+
+---
+
+## 1. Relational Databases (RDBMS)
+The most common type, RDBMS uses a rigid, predefined schema. Data is organized into **tables** with rows (records) and columns (attributes).
+
+* **Key Feature:** Uses **SQL** (Structured Query Language) and maintains **ACID** compliance (Atomicity, Consistency, Isolation, Durability).
+* **Examples:** MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.
+
+## 2. Non-Relational (NoSQL) Databases
+NoSQL databases are designed for distributed data stores with high scalability needs. They are flexible, allowing for unstructured or semi-structured data.
+
+* **Document Stores:** Store data in JSON-like documents (e.g., **MongoDB**).
+* **Key-Value Stores:** Store data as a collection of key-value pairs (e.g., **Redis**).
+* **Wide-Column Stores:** Optimized for large datasets and high availability (e.g., **Cassandra**).
+
+## 3. Specialized Architecture Types
+
+### **Graph Databases**
+Uses **nodes** (entities) and **edges** (relationships). Perfect for social networks or recommendation engines where the connection between data points is the priority.
+* **Examples:** Neo4j, Amazon Neptune, ArangoDB.
+
+### **Time-Series Databases**
+Optimized for time-stamped data, providing efficient storage and retrieval for sequences of events.
+* **Examples:** InfluxDB, TimescaleDB, OpenTSDB.
+
+### **Object-Oriented Databases**
+Data is represented in the form of **objects**, as used in object-oriented programming. This bridges the gap between application code and data storage.
+* **Examples:** ObjectDB, db4o, Versant.
+
+### **Columnar Databases**
+Unlike traditional row-based storage, these store data in columns. This significantly improves performance for analytical workloads and data warehousing.
+* **Examples:** Amazon Redshift, Google BigQuery, Apache Druid.
+
+---
+
+## 4. Performance & Deployment Models
+
+### **In-Memory Databases**
+Stores data in the main memory (RAM) rather than on disk to allow for near-instant data access.
+* **Use Case:** Real-time applications, caching, and financial trading.
+* **Examples:** Redis, Memcached, SAP HANA.
+
+### **NewSQL Databases**
+A modern class of RDBMS that seeks to provide the scalability of NoSQL systems while maintaining the ACID guarantees of traditional SQL.
+* **Examples:** CockroachDB, VoltDB, NuoDB.
+
+### **Distributed & Cloud Databases**
+* **Distributed:** Spread across multiple physical locations or servers to ensure high availability and fault tolerance (e.g., **Amazon DynamoDB**).
+* **Cloud:** Hosted and managed on cloud platforms, offering "Database as a Service" (DBaaS) (e.g., **Amazon RDS**, **Google Cloud SQL**).
+
+---
+
+## Summary Comparison
+
+| Category | Primary Usage | Data Structure |
+| :--- | :--- | :--- |
+| **RDBMS** | Business Logic / Transactions | Structured (Tables) |
+| **NoSQL** | Big Data / Real-time Web | Unstructured (JSON/Key-Value) |
+| **Graph** | Social Networks / Fraud Detection | Nodes & Edges |
+| **Columnar** | Analytics / BI Reporting | Columns |
+| **In-Memory** | Caching / High-speed Apps | RAM-based |
 
 ---
 #
